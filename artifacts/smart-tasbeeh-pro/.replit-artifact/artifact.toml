@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Smart Tasbeeh Pro"
+version = "1.0.0"
+id = "artifacts/smart-tasbeeh-pro"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18498
+
+[services.development]
+run = "pnpm --filter @workspace/smart-tasbeeh-pro run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/smart-tasbeeh-pro", "run", "build" ]
+publicDir = "artifacts/smart-tasbeeh-pro/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18498"
+BASE_PATH = "/"

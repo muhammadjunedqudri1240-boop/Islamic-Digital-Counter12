@@ -1,0 +1,27 @@
+{
+  "name": "Smart Tasbeeh Pro",
+  "short_name": "Tasbeeh Pro",
+  "description": "Premium Islamic Tasbeeh Counter — count your dhikr beautifully",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#d4a017",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["lifestyle", "utilities", "religion"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
